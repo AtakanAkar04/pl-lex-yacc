@@ -1,0 +1,20 @@
+<DaK 
+int i = 1;
+int product = 1;
+while(true) begin
+	print("Enter non-zero element for element ", i, ":");
+	int temp = input("Value:â");
+	if(temp == 0)begin 
+		product = 1;
+		i = 1;
+		continue;
+	end
+	product = product * temp;
+	i = i +1;
+	//if three number were read than terminate the loop
+	if(i == 4)begin 
+		print(product);
+		break;
+	end
+end
+#>

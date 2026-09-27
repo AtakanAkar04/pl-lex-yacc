@@ -1,0 +1,28 @@
+<DaK
+func returnTheResult(int a, int b) begin 
+    int toReturn = a % b;
+    return toReturn;
+end 
+print("Please enter 10 numbers for operation");
+int arr[10] // missing semicolon
+for(int i = 0; i < 10; i = i + 1) begin 
+    arr[i] = input("Enter the number ");
+end 
+
+int m = 1;
+print("Enter a number that wont be a zero value:");
+m = input("must be nonzero");
+
+while(m == 0) begin 
+    m = input("Enter a new number that wont be a zero value:");
+end
+
+int totalCount = 0;
+for(int i = 0; i < 10; i = i + 1) begin 
+    if(returnTheResult(arr[i], m)) begin  
+        totalCount = totalCount + 1;
+    end
+end
+
+print(totalCount);
+#>

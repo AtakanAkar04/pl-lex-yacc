@@ -1,0 +1,13 @@
+<DaK
+//Ask for input.
+count = input("Enter the amount of the number you want to in: ");
+for(int i = 0; i < count; i += 1) begin
+	number = input("Enter a number: ");
+	//Checks whether it is odd or even.
+	if(number % 2 == 1) begin
+		print("Your number is odd");
+	end else begin
+		print("Your number is even");
+	end
+end
+#>

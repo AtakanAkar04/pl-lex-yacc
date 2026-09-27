@@ -1,0 +1,22 @@
+<DaK
+func foo(int p,int q)begin
+	print("foos parameters: p: ", p, " and q: ", q);
+	if(p >= q)begin
+		return p;
+	end
+	else begin 
+		return q;
+	end
+end
+float a[4] = begin 3.15, 7, 0.003, 1.17 end;
+float b[3] = begin 9, -1.12, +1.12 end;
+for(int i = 0; i < 4;i = i + 1)begin
+	for(int j = 0;j <3;j = j +1)begin
+		int temp1 = a[i];
+		int temp2 = b[j];
+		int c = foo(temp1,temp2);
+		print("c: ", c, "b: ", b, "c: ", c);
+	end
+end
+
+#>

@@ -1,0 +1,14 @@
+<DaK
+int i = 0;
+int arr[3] = begin 0,0,0 end;
+int max;
+for(; i < 3 ; i = i + 1)begin
+int temp = input("Enter a value: ");
+	if(i == 0)begin 
+		max = temp;
+	end
+	arr[i] = temp;
+end
+int cal = 2 ^max;
+print(cal);
+#>
