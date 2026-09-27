@@ -1,10 +1,8 @@
 # DaK#
 
-A small imperative programming language, with a lexer and parser written in **Lex** and **Yacc**.
+A small programming language, with a lexer and parser written in **Lex** and **Yacc**.
 
 DaK# has C-style operators, explicit types, and `begin` / `end` blocks. Every program sits between a `<DaK` start marker and a `#>` end marker. The parser reads a DaK# program from standard input and reports whether it is syntactically valid. If it is not, it prints the line number of the first syntax error.
-
-> **Note:** This is a basic implementation that covers only the lexer and the parser. It tells you whether a program is syntactically valid, but it doesn't run programs, build a syntax tree, or check types. The [type rules](#type-rules) below are part of the language design, not something the parser enforces.
 
 ```text
 <DaK
